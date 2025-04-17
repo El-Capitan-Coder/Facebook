@@ -11,10 +11,7 @@ if ($conn->connect_error) {
     die("Database connection failed: " . $conn->connect_error);
 }
 
-$fb = new Facebook([
-    'app_id' => '995337985513411',
-    'app_secret' => '0fe01c0105778c72a982464e48e2d7ac',
-    'default_graph_version' => 'v18.0',
+
 ]);
 
 $helper = $fb->getRedirectLoginHelper();
